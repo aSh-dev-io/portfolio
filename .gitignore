@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+node_modules
+=======
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+>>>>>>> a830790c5a21254d9538984fc542435103c3ac76
