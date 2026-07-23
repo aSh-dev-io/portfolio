@@ -1,12 +1,12 @@
 "use client";
 
-import { X } from "lucide-react";
 import { useState } from "react";
-
+import { X } from "lucide-react";
 import ProjectTabs from "./ProjectTabs";
+import { Project } from "@/lib/types";
 
 type Props = {
-  project: any;
+  project: Project | null;
   onClose: () => void;
 };
 
@@ -14,108 +14,97 @@ export default function ProjectModal({
   project,
   onClose,
 }: Props) {
-
   const [tab, setTab] = useState("Overview");
 
   if (!project) return null;
 
   return (
-
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md">
+      <div className="relative max-h-[90vh] w-[90%] max-w-5xl overflow-y-auto rounded-2xl border border-border bg-background p-8 shadow-2xl">
 
-      <div className="max-h-[90vh] w-[90%] max-w-5xl overflow-y-auto rounded-2xl border border-border bg-background p-8">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute right-6 top-6 rounded-lg p-2 transition hover:bg-white/10"
+        >
+          <X className="h-6 w-6" />
+        </button>
 
-        <div className="mb-8 flex items-start justify-between">
+        {/* Header */}
+        <div className="mb-8">
+          <p className="text-accent text-sm font-medium">
+            {project.subtitle}
+          </p>
 
-          <div>
+          <h2 className="mt-2 text-3xl font-bold">
+            {project.title}
+          </h2>
 
-            <p className="text-accent">
-              {project.subtitle}
-            </p>
-
-            <h2 className="mt-2 text-3xl font-bold">
-              {project.title}
-            </h2>
-
-          </div>
-
-          <button onClick={onClose}>
-            <X />
-          </button>
-
+          <p className="mt-4 text-muted-foreground">
+            {project.description}
+          </p>
         </div>
 
+        {/* Tabs */}
         <ProjectTabs
           active={tab}
           onChange={setTab}
         />
 
+        {/* Content */}
         <div className="mt-8">
 
           {tab === "Overview" && (
-            <p>{project.overview}</p>
+            <div className="space-y-4">
+              <p>{project.overview}</p>
+            </div>
           )}
 
           {tab === "Architecture" && (
-
-            <div className="space-y-3">
-
-              {project.architecture.map((step: string) => (
-
+            <div className="space-y-4">
+              {project.architecture.map((step, index) => (
                 <div
-                  key={step}
+                  key={index}
                   className="rounded-lg border border-border p-4"
                 >
                   {step}
                 </div>
-
               ))}
-
             </div>
-
           )}
 
           {tab === "Features" && (
-
             <ul className="list-disc space-y-2 pl-6">
-
-              {project.features.map((item: string) => (
-                <li key={item}>{item}</li>
+              {project.features.map((feature, index) => (
+                <li key={index}>
+                  {feature}
+                </li>
               ))}
-
             </ul>
-
           )}
 
           {tab === "Challenges" && (
-
             <ul className="list-disc space-y-2 pl-6">
-
-              {project.challenges.map((item: string) => (
-                <li key={item}>{item}</li>
+              {project.challenges.map((challenge, index) => (
+                <li key={index}>
+                  {challenge}
+                </li>
               ))}
-
             </ul>
-
           )}
 
           {tab === "Future" && (
-
             <ul className="list-disc space-y-2 pl-6">
-
-              {project.future.map((item: string) => (
-                <li key={item}>{item}</li>
+              {project.future.map((futureItem, index) => (
+                <li key={index}>
+                  {futureItem}
+                </li>
               ))}
-
             </ul>
-
           )}
 
         </div>
-
       </div>
-
     </div>
-
   );
 }

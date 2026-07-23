@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import SectionHeading from "@/components/ui/SectionHeading";
 import FadeIn from "@/components/ui/FadeIn";
-
 import ProjectCard from "@/components/ui/ProjectCard";
 import ProjectModal from "@/components/ui/ProjectModal";
 
@@ -46,7 +45,6 @@ export default function Projects() {
 
       <ProjectModal
         project={selectedProject}
-        isOpen={selectedProject !== null}
         onClose={() => setSelectedProject(null)}
       />
     </section>
