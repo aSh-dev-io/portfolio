@@ -3,20 +3,18 @@ import type { Project } from "./types";
 export const projects: Project[] = [
   {
     id: "nfc-attendance",
-
     featured: true,
 
     title: "Smart NFC & Camera-Based Attendance System",
-
     subtitle: "Embedded Systems • IoT",
 
     description:
       "A secure smart attendance solution that combines NFC authentication, ESP32-CAM face verification, and Firebase cloud synchronization to eliminate proxy attendance and provide real-time monitoring.",
 
-    image: "/projects/nfc-attendance.jpg",
+    // Image inside /public
+    image: "/nfc-attendance.png",
 
     duration: "3 Months",
-
     role: "Embedded Systems Developer",
 
     tags: [
@@ -30,7 +28,6 @@ export const projects: Project[] = [
     ],
 
     github: "https://github.com/aSh-dev-io",
-
     demoHref: "#",
 
     overview:
@@ -87,20 +84,18 @@ export const projects: Project[] = [
 
   {
     id: "smart-water",
-
     featured: true,
 
     title: "Smart Water Quality & Pipeline Monitoring System",
-
     subtitle: "IoT • AI • LoRaWAN",
 
     description:
       "An intelligent IoT platform for monitoring water quality, predicting pipeline failures, detecting underground leaks, and sending real-time cloud alerts using LoRaWAN.",
 
-    image: "/projects/water-monitoring.jpg",
+    // Image inside /public
+    image: "/water-monitoring.png",
 
     duration: "5 Months",
-
     role: "IoT & Embedded Developer",
 
     tags: [
@@ -114,7 +109,6 @@ export const projects: Project[] = [
     ],
 
     github: "https://github.com/aSh-dev-io",
-
     demoHref: "#",
 
     overview:
@@ -164,82 +158,6 @@ export const projects: Project[] = [
       "Satellite communication",
       "Solar-powered nodes",
       "Mobile monitoring",
-    ],
-  },
-
-  {
-    id: "motor-controller",
-
-    featured: false,
-
-    title: "PCB-Based Brushless Motor Controller",
-
-    subtitle: "PCB Design",
-
-    description:
-      "Designed and validated a compact multi-layer PCB for brushless motor control in robotics and industrial automation applications.",
-
-    image: "/projects/motor-controller.jpg",
-
-    duration: "6 Weeks",
-
-    role: "PCB Designer",
-
-    tags: [
-      "KiCad",
-      "PCB Design",
-      "Embedded C",
-      "BLDC",
-      "Power Electronics",
-    ],
-
-    github: "https://github.com/aSh-dev-io",
-
-    demoHref: "#",
-
-    overview:
-      "A custom PCB designed to drive BLDC motors efficiently while maintaining compact dimensions, thermal stability, and low electrical noise.",
-
-    problem:
-      "Commercial motor controllers lacked flexibility and occupied excessive board space for the intended robotic platform.",
-
-    solution:
-      "Developed a dedicated PCB optimized for compact routing, efficient thermal dissipation, and reliable motor control.",
-
-    architecture: [
-      "Power Supply",
-      "Microcontroller",
-      "MOSFET Driver",
-      "Gate Driver",
-      "BLDC Motor",
-    ],
-
-    features: [
-      "Compact PCB layout",
-      "Efficient power delivery",
-      "Thermal optimization",
-      "Motor protection",
-    ],
-
-    challenges: [
-      "Signal integrity",
-      "Thermal management",
-      "PCB routing",
-      "Power noise reduction",
-    ],
-
-    learnings: [
-      "Power electronics",
-      "PCB stack-up",
-      "EMI reduction",
-      "Signal integrity",
-    ],
-
-    future: [
-      "4-layer PCB",
-      "CAN communication",
-      "Higher current support",
-      "IoT diagnostics",
     ],
   },
 ];

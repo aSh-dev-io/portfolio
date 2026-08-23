@@ -12,47 +12,133 @@ import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+import GlobalGeometry from "@/components/background/GlobalGeometry";
+import SectionGeometry from "@/components/background/SectionGeometry";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* ================= Navigation ================= */}
-      <Navbar />
+    <main className="relative min-h-screen overflow-x-hidden bg-[#050B12] text-foreground">
 
-      {/* ================= Hero ================= */}
-      <Hero />
+      {/* =====================================================
+          GLOBAL BACKGROUND
+      ===================================================== */}
 
-      {/* ================= About ================= */}
-      <About />
+      <GlobalGeometry />
 
-      {/* ================= Skills ================= */}
-      <Skills />
+      {/* =====================================================
+          WEBSITE CONTENT
+      ===================================================== */}
 
-      {/* ================= Projects ================= */}
-      <Projects />
+      <div className="relative z-10">
 
-      {/* ================= Experience ================= */}
-      <Experience />
+        {/* ===================================================
+            HERO
+        =================================================== */}
 
-      {/* ================= Education ================= */}
-      <Education />
+        <Hero />
 
-      {/* ================= Achievements ================= */}
-      <Achievements />
+        {/* ===================================================
+            NAVIGATION
+        =================================================== */}
 
-      {/* ================= Certifications ================= */}
-      <Certifications />
+        <Navbar />
 
-      {/* ================= Publications ================= */}
-      <Publications />
+        {/* ===================================================
+            ABOUT
+        =================================================== */}
 
-      {/* ================= Resume ================= */}
-      <Resume />
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="about" />
+          <About />
+        </section>
 
-      {/* ================= Contact ================= */}
-      <Contact />
+        {/* ===================================================
+            SKILLS
+        =================================================== */}
 
-      {/* ================= Footer ================= */}
-      <Footer />
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="skills" />
+          <Skills />
+        </section>
+
+        {/* ===================================================
+            PROJECTS
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="projects" />
+          <Projects />
+        </section>
+
+        {/* ===================================================
+            EXPERIENCE
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="experience" />
+          <Experience />
+        </section>
+
+        {/* ===================================================
+            EDUCATION
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="education" />
+          <Education />
+        </section>
+
+        {/* ===================================================
+            ACHIEVEMENTS
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="achievements" />
+          <Achievements />
+        </section>
+
+        {/* ===================================================
+            CERTIFICATIONS
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="certifications" />
+          <Certifications />
+        </section>
+
+        {/* ===================================================
+            PUBLICATIONS
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="publications" />
+          <Publications />
+        </section>
+
+        {/* ===================================================
+            RESUME
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <Resume />
+        </section>
+
+        {/* ===================================================
+            CONTACT
+        =================================================== */}
+
+        <section className="relative overflow-hidden">
+          <SectionGeometry variant="contact" />
+          <Contact />
+        </section>
+
+        {/* ===================================================
+            FOOTER
+        =================================================== */}
+
+        <Footer />
+
+      </div>
     </main>
   );
 }
