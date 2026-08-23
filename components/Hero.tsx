@@ -46,10 +46,16 @@ export default function Hero() {
   return (
     <section
       id="intro"
-      className="relative min-h-screen overflow-hidden"
+      className="
+        relative
+        min-h-[100svh]
+        w-full
+        overflow-hidden
+        bg-background
+      "
     >
       {/* =========================================================
-          BACKGROUND — KEEPING EXISTING PORTFOLIO BACKGROUND
+          BACKGROUND
       ========================================================= */}
 
       <GradientBackground />
@@ -58,28 +64,76 @@ export default function Hero() {
       <MouseSpotlight />
 
       {/* =========================================================
-          MAIN CONTENT
+          HERO CONTENT
       ========================================================= */}
 
-      <div className="section-container relative z-10 w-full pt-28 pb-20">
-        <div className="grid min-h-[75vh] items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
+      <div
+        className="
+          relative
+          z-10
+          mx-auto
+          flex
+          min-h-[100svh]
+          w-full
+          max-w-[1500px]
+          items-center
+          px-6
+          pb-20
+          pt-28
 
+          min-[768px]:px-10
+          min-[768px]:pt-24
+
+          min-[1024px]:px-14
+          min-[1024px]:pt-20
+
+          min-[1280px]:px-16
+        "
+      >
+        <div
+          className="
+            grid
+            w-full
+            grid-cols-1
+            items-center
+            gap-14
+
+            min-[768px]:grid-cols-[1.05fr_0.95fr]
+            min-[768px]:gap-12
+
+            min-[1024px]:gap-16
+
+            min-[1280px]:grid-cols-[1fr_0.9fr]
+            min-[1280px]:gap-24
+          "
+        >
           {/* =====================================================
-              LEFT SIDE
+              LEFT — INTRODUCTION
           ===================================================== */}
 
-          <div>
-
+          <div className="w-full min-w-0">
             {/* CLOCK */}
 
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-12"
+              transition={{
+                duration: 0.55,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="mb-8 min-[768px]:mb-10"
             >
               <div
-                className="font-mono text-5xl font-semibold tracking-tight sm:text-6xl"
+                className="
+                  font-mono
+                  text-4xl
+                  font-semibold
+                  tracking-tight
+
+                  min-[480px]:text-5xl
+                  min-[768px]:text-5xl
+                  min-[1024px]:text-6xl
+                "
                 style={{
                   color: "var(--foreground)",
                 }}
@@ -88,7 +142,17 @@ export default function Hero() {
               </div>
 
               <div
-                className="mt-3 font-mono text-xs font-semibold uppercase tracking-[0.35em]"
+                className="
+                  mt-2
+                  font-mono
+                  text-[10px]
+                  font-semibold
+                  uppercase
+                  tracking-[0.3em]
+
+                  min-[768px]:mt-3
+                  min-[768px]:text-xs
+                "
                 style={{
                   color: "var(--muted)",
                 }}
@@ -97,18 +161,31 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* =================================================
-                MAIN STATEMENT
-            ================================================= */}
+            {/* MAIN HEADING */}
 
             <motion.h1
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
+                delay: 0.08,
                 duration: 0.7,
-                ease: "easeOut",
+                ease: [0.22, 1, 0.36, 1],
               }}
-              className="max-w-[650px] text-5xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl"
+              className="
+                max-w-[700px]
+                text-5xl
+                font-bold
+                leading-[1.05]
+                tracking-[-0.035em]
+
+                min-[480px]:text-6xl
+
+                min-[768px]:text-6xl
+
+                min-[1024px]:text-7xl
+
+                min-[1280px]:text-[5.2rem]
+              "
               style={{
                 color: "var(--foreground)",
               }}
@@ -117,51 +194,61 @@ export default function Hero() {
               <br />
               into reliable
               <br />
-              <span
-                style={{
-                  color: "var(--foreground)",
-                }}
-              >
-                solutions.
-              </span>
+              solutions.
             </motion.h1>
 
-            {/* =================================================
-                DESCRIPTION
-            ================================================= */}
+            {/* DESCRIPTION */}
 
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.15,
+                delay: 0.2,
                 duration: 0.7,
-                ease: "easeOut",
+                ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-7 max-w-[620px] text-base leading-8 sm:text-lg"
+              className="
+                mt-6
+                max-w-[650px]
+                text-sm
+                leading-7
+
+                min-[480px]:text-base
+
+                min-[768px]:mt-7
+                min-[768px]:text-base
+                min-[768px]:leading-8
+
+                min-[1024px]:text-lg
+              "
               style={{
                 color: "var(--muted)",
               }}
             >
-              I believe great engineering starts with thoughtful
-              design, continuous learning, and attention to detail.
-              Every project is a chance to innovate, improve, and
-              make technology more reliable.
+              I believe great engineering starts with thoughtful design,
+              continuous learning, and attention to detail. Every project is
+              a chance to innovate, improve, and make technology more reliable.
             </motion.p>
 
-            {/* =================================================
-                BUTTONS
-            ================================================= */}
+            {/* BUTTONS */}
 
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                delay: 0.3,
+                delay: 0.32,
                 duration: 0.7,
-                ease: "easeOut",
+                ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-10 flex flex-wrap gap-4"
+              className="
+                mt-8
+                flex
+                flex-wrap
+                gap-3
+
+                min-[768px]:mt-10
+                min-[768px]:gap-4
+              "
             >
               <a
                 href="#projects"
@@ -184,49 +271,86 @@ export default function Hero() {
           </div>
 
           {/* =====================================================
-              RIGHT SIDE — LOOPING VIDEO
+              RIGHT — HERO VIDEO
           ===================================================== */}
 
           <motion.div
             initial={{
               opacity: 0,
-              y: 10,
+              y: 18,
+              scale: 0.985,
             }}
             animate={{
               opacity: 1,
               y: 0,
+              scale: 1,
             }}
             transition={{
-              delay: 0.2,
-              duration: 0.8,
-              ease: "easeOut",
+              delay: 0.18,
+              duration: 0.85,
+              ease: [0.22, 1, 0.36, 1],
             }}
-            className="relative flex items-center justify-center lg:justify-end"
-          >
+            className="
+              relative
+              flex
+              w-full
+              items-center
+              justify-center
 
-            {/* Very subtle glow */}
+              min-[768px]:justify-end
+            "
+          >
+            {/* VERY SUBTLE ACCENT GLOW */}
 
             <div
-              className="pointer-events-none absolute h-[300px] w-[300px] rounded-full blur-[120px] opacity-20"
+              className="
+                pointer-events-none
+                absolute
+                h-[240px]
+                w-[240px]
+                rounded-full
+                blur-[110px]
+                opacity-[0.13]
+
+                min-[768px]:h-[320px]
+                min-[768px]:w-[320px]
+              "
               style={{
                 background: "var(--accent)",
               }}
             />
 
-            {/* =================================================
-                VIDEO FRAME
-            ================================================= */}
+            {/* VIDEO */}
 
-            <div className="relative w-full max-w-[430px]">
+            <div
+              className="
+                relative
+                w-full
+                max-w-[360px]
 
+                min-[480px]:max-w-[400px]
+
+                min-[768px]:max-w-[430px]
+
+                min-[1024px]:max-w-[480px]
+
+                min-[1280px]:max-w-[540px]
+              "
+            >
               <div
-                className="relative overflow-hidden rounded-[24px] border"
+                className="
+                  relative
+                  overflow-hidden
+                  rounded-[22px]
+                  border
+
+                  min-[768px]:rounded-[24px]
+                "
                 style={{
-                  borderColor: "rgba(255,255,255,0.65)",
-                  background: "transparent",
+                  borderColor: "rgba(255,255,255,0.62)",
+                  background: "rgba(5,18,32,0.15)",
                 }}
               >
-
                 <video
                   src="/mp4.mp4"
                   autoPlay
@@ -234,24 +358,37 @@ export default function Hero() {
                   muted
                   playsInline
                   preload="auto"
-                  className="aspect-square w-full object-cover"
+                  className="
+                    block
+                    aspect-square
+                    w-full
+                    object-cover
+                  "
                 />
-
               </div>
 
-              {/* =================================================
-                  SYSTEM ONLINE LABEL
-              ================================================= */}
+              {/* SYSTEM ONLINE */}
 
               <div
-                className="absolute -bottom-5 left-6 rounded-lg border px-5 py-2.5 backdrop-blur-md"
+                className="
+                  absolute
+                  -bottom-5
+                  left-5
+                  rounded-lg
+                  border
+                  px-4
+                  py-2.5
+                  backdrop-blur-md
+
+                  min-[768px]:left-6
+                  min-[768px]:px-5
+                "
                 style={{
-                  borderColor: "rgba(255,255,255,0.75)",
+                  borderColor: "rgba(255,255,255,0.7)",
                   background: "rgba(5,18,32,0.9)",
                 }}
               >
                 <div className="flex items-center gap-2.5">
-
                   <span
                     className="h-2 w-2 rounded-full"
                     style={{
@@ -261,20 +398,25 @@ export default function Hero() {
                   />
 
                   <span
-                    className="font-mono text-[10px] font-medium uppercase tracking-[0.22em]"
+                    className="
+                      font-mono
+                      text-[9px]
+                      font-medium
+                      uppercase
+                      tracking-[0.2em]
+
+                      min-[768px]:text-[10px]
+                    "
                     style={{
                       color: "var(--foreground)",
                     }}
                   >
                     SYSTEM / ONLINE
                   </span>
-
                 </div>
               </div>
-
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
