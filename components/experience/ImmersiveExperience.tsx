@@ -9,6 +9,7 @@ const EngineeringScene = dynamic(() => import("./EngineeringScene"), { ssr: fals
 
 export default function ImmersiveExperience({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
+  const [sceneReady, setSceneReady] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [webgl, setWebgl] = useState(true);
   const handleReady = useCallback(() => setReady(true), []);
@@ -25,9 +26,9 @@ export default function ImmersiveExperience({ children }: { children: React.Reac
 
   return (
     <>
-      {!reducedMotion && <BootSequence onReady={handleReady} />}
+      {!reducedMotion && <BootSequence sceneReady={sceneReady} onReady={handleReady} />}
       <div className={`experience-world ${ready ? "experience-world--ready" : ""}`}>
-        {webgl && !reducedMotion ? <EngineeringScene /> : <SceneFallback />}
+        {webgl && !reducedMotion ? <EngineeringScene onReady={() => setSceneReady(true)} /> : <SceneFallback />}
       </div>
       <div className={`portfolio-content ${ready ? "portfolio-content--ready" : ""}`}>{children}</div>
     </>

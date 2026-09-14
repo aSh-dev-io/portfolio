@@ -107,8 +107,8 @@ body {
   .lab-panel { @apply backdrop-blur-none; }
 }
 
-.experience-world { @apply pointer-events-none fixed inset-0 z-[2] opacity-0 transition-opacity duration-1000; }
-.experience-world--ready { @apply opacity-100; }
+.experience-world { @apply pointer-events-none fixed inset-0 z-[2] scale-[1.015] opacity-0 transition-[opacity,transform] duration-700 ease-out; }
+.experience-world--ready { @apply scale-100 opacity-100; }
 .engineering-scene { @apply absolute inset-0; background: radial-gradient(circle at 68% 48%, rgba(45, 139, 143, 0.1), transparent 34%), linear-gradient(115deg, rgba(5, 11, 18, 0.9), rgba(5, 11, 18, 0.36)); }
 .engineering-scene canvas { @apply h-full w-full; }
 .scene-fallback { @apply absolute inset-0 overflow-hidden; background: radial-gradient(circle at 73% 46%, rgba(47, 160, 159, .13), transparent 31%); }
@@ -125,15 +125,19 @@ body {
 .portfolio-content--ready { @apply opacity-100; }
 .boot-sequence { @apply fixed inset-0 z-[50] overflow-hidden bg-[#050b12] text-accent; transition: opacity .7s ease, visibility .7s ease; }
 .boot-sequence--exit { opacity: 0; visibility: hidden; pointer-events: none; }
-.boot-grid { @apply absolute inset-0 opacity-30; background-image: linear-gradient(rgba(84,229,221,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(84,229,221,.06) 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(circle, black, transparent 70%); }
-.boot-core { @apply absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 text-center; }
-.boot-mark { @apply font-mono text-6xl font-semibold tracking-[-.12em] text-foreground; text-shadow: 0 0 34px rgba(84,229,221,.18); }
-.boot-core strong { @apply font-mono text-xs uppercase tracking-[.28em] text-foreground/80; }
-.boot-progress { @apply mt-4 h-px w-52 overflow-hidden bg-white/10; }.boot-progress i { @apply block h-full w-1/2 bg-accent; animation: boot-progress 2.5s ease-in-out forwards; }
-.boot-status, .boot-coordinate { @apply font-mono text-[9px] uppercase tracking-[.18em] text-accent/50; }.boot-status { @apply mt-3; }
+.boot-grid { @apply absolute inset-0 opacity-25; background-image: linear-gradient(rgba(84,229,221,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(84,229,221,.055) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(circle, black, transparent 68%); animation: boot-grid-in .8s ease-out both; }
+.boot-core { @apply absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 text-center; }
+.boot-mark { @apply font-mono text-7xl font-semibold tracking-[-.14em] text-foreground; text-shadow: 0 0 34px rgba(84,229,221,.16); animation: boot-rise .65s .18s ease-out both; }
+.boot-core .instrument-label { animation: boot-rise .65s .45s ease-out both; }
+.boot-core strong { @apply font-mono text-xs uppercase tracking-[.3em] text-foreground/80; animation: boot-rise .65s .72s ease-out both; }
+.boot-rule { @apply mt-3 h-px w-[min(28rem,64vw)] overflow-hidden bg-white/10; }.boot-rule i { @apply block h-full w-1/3 bg-accent; animation: boot-rule 1.8s .85s cubic-bezier(.55,0,.2,1) infinite; }
+.boot-states { @apply flex w-[min(28rem,64vw)] justify-between border-y border-white/[0.08] py-3 font-mono text-[9px] uppercase tracking-[.18em] text-accent/55; }.boot-states span { @apply flex items-center gap-2; }.boot-states i { @apply size-1 rounded-full bg-accent/40; }.boot-states i.is-ready { @apply bg-accent shadow-[0_0_10px_rgba(84,229,221,.8)]; }
+.boot-status, .boot-coordinate { @apply font-mono text-[9px] uppercase tracking-[.18em] text-accent/50; }.boot-status { @apply mt-1; }
 .boot-coordinate { @apply absolute; }.boot-coordinate--one { @apply left-[8vw] top-[18vh]; }.boot-coordinate--two { @apply bottom-[18vh] right-[9vw]; }
-.boot-signal { @apply absolute left-[12vw] right-[12vw] top-1/2 h-px bg-accent/20; }.boot-signal::after { content: ""; @apply absolute left-0 top-1/2 size-1 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_18px_6px_rgba(84,229,221,.6)]; animation: boot-signal 2.2s cubic-bezier(.55,0,.2,1) infinite; }
-.boot-crosshair { @apply absolute size-8 border border-accent/30; }.boot-crosshair--one { @apply left-[18vw] top-[28vh] border-r-0 border-b-0; }.boot-crosshair--two { @apply bottom-[27vh] right-[18vw] border-l-0 border-t-0; }
+.boot-signal { @apply absolute left-[12vw] right-[12vw] top-1/2 h-px bg-accent/20; }.boot-signal::after { content: ""; @apply absolute left-0 top-1/2 size-1 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_18px_6px_rgba(84,229,221,.55)]; animation: boot-signal 1.9s 1s cubic-bezier(.55,0,.2,1) infinite; }
+@keyframes boot-grid-in { from { opacity: 0; } to { opacity: .25; } }
+@keyframes boot-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes boot-rule { from { transform: translateX(-100%); } to { transform: translateX(330%); } }
 @keyframes boot-signal { from { left: 0; } to { left: 100%; } }
 @keyframes boot-progress { from { width: 0; } to { width: 100%; } }
 @media (max-width: 1023px) { .engineering-scene, .scene-fallback { opacity: .7; }.fallback-display { @apply right-8 top-28 w-52; }.fallback-pcb { @apply right-8 top-[48vh] scale-75; }.fallback-trace--one { left: 42%; width: 45vw; }.fallback-trace--two { left: 50%; width: 32vw; } }
