@@ -112,6 +112,11 @@ export default function Hero() {
           ===================================================== */}
 
           <div className="w-full min-w-0">
+            <div className="mb-6 flex flex-wrap gap-2">
+              <span className="chip font-mono uppercase tracking-[0.14em] text-[10px]">R&amp;D portfolio</span>
+              <span className="chip font-mono uppercase tracking-[0.14em] text-[10px]">Systems / software</span>
+            </div>
+
             {/* CLOCK */}
 
             <motion.div

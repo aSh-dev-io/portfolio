@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 import GlobalGeometry from "@/components/background/GlobalGeometry";
+import EngineeringWorkbench from "@/components/background/EngineeringWorkbench";
 import SectionGeometry from "@/components/background/SectionGeometry";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       ===================================================== */}
 
       <GlobalGeometry />
+      <EngineeringWorkbench />
 
       {/* =====================================================
           WEBSITE CONTENT
