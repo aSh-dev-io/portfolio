@@ -36,9 +36,7 @@ export default function GlobalGeometry() {
         }}
       />
 
-      {/* =====================================================
-          LARGE ARCHITECTURAL CIRCLE
-      ===================================================== */}
+      {/* Ambient blueprint scaffolding stays intentionally static so the workbench remains the visual anchor. */}
 
       <motion.div
         animate={{

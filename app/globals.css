@@ -61,3 +61,48 @@ body {
 .btn-secondary {
   @apply inline-flex items-center justify-center gap-2 rounded-full border border-border bg-transparent px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/50 hover:text-accent;
 }
+
+.lab-panel {
+  @apply border border-white/[0.08] bg-[#0a131b]/80 shadow-[0_18px_70px_rgba(0,0,0,0.2)] backdrop-blur-sm;
+}
+
+.instrument-label {
+  @apply font-mono text-[10px] uppercase tracking-[0.22em] text-accent/70;
+}
+
+.hairline {
+  @apply h-px bg-gradient-to-r from-accent/30 via-white/10 to-transparent;
+}
+
+.engineering-workbench {
+  @apply pointer-events-none fixed inset-0 z-[1] hidden overflow-hidden lg:block;
+}
+
+.workbench-frame {
+  @apply absolute right-[7vw] top-[15vh] h-[72vh] w-[34vw] border border-accent/[0.08] bg-gradient-to-br from-white/[0.025] to-transparent;
+  transform: perspective(1000px) rotateY(-12deg) rotateX(5deg);
+}
+
+.workbench-display {
+  @apply absolute right-[12vw] top-[23vh] w-[23vw] border border-accent/20 bg-[#081019]/90 p-4 text-accent shadow-[0_0_60px_rgba(58,206,201,0.06)];
+  transform: perspective(900px) rotateY(-12deg) rotateX(5deg);
+}
+
+.workbench-waveform { @apply mt-4 h-auto w-full; }
+.workbench-readout { @apply mt-3 flex justify-between font-mono text-[9px] uppercase tracking-widest text-muted; }
+.workbench-pcb { @apply absolute bottom-[12vh] right-[9vw] h-40 w-64 border border-accent/25 bg-[#122b2b]/80 shadow-[0_20px_60px_rgba(0,0,0,0.4)]; transform: perspective(800px) rotateX(54deg) rotateZ(-8deg); }
+.pcb-chip { @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-accent/40 bg-[#0b171b] px-4 py-3 font-mono text-[10px] tracking-widest text-accent; }
+.pcb-trace { @apply absolute h-px bg-accent/50; }
+.trace-a { @apply left-4 top-8 w-44; transform: rotate(17deg); }
+.trace-b { @apply bottom-9 right-3 w-40; transform: rotate(-14deg); }
+.pcb-node { @apply absolute size-1 rounded-full bg-accent shadow-[0_0_12px_rgba(58,206,201,0.8)]; }
+.workbench-blueprint { @apply absolute bottom-[10vh] right-[45vw] flex gap-5 font-mono text-[9px] uppercase tracking-widest text-accent/40; }
+.workbench-blueprint i { @apply block h-3 w-3 border border-accent/40; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+
+@media (max-width: 1023px) {
+  .lab-panel { @apply backdrop-blur-none; }
+}
