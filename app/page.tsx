@@ -11,136 +11,33 @@ import Publications from "@/components/Publications";
 import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
 import GlobalGeometry from "@/components/background/GlobalGeometry";
 import EngineeringWorkbench from "@/components/background/EngineeringWorkbench";
 import SectionGeometry from "@/components/background/SectionGeometry";
+import ImmersiveExperience from "@/components/experience/ImmersiveExperience";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-[#050B12] text-foreground">
-
-      {/* =====================================================
-          GLOBAL BACKGROUND
-      ===================================================== */}
-
-      <GlobalGeometry />
-      <EngineeringWorkbench />
-
-      {/* =====================================================
-          WEBSITE CONTENT
-      ===================================================== */}
-
-      <div className="relative z-10">
-
-        {/* ===================================================
-            HERO
-        =================================================== */}
-
-        <Hero />
-
-        {/* ===================================================
-            NAVIGATION
-        =================================================== */}
-
-        <Navbar />
-
-        {/* ===================================================
-            ABOUT
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="about" />
-          <About />
-        </section>
-
-        {/* ===================================================
-            SKILLS
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="skills" />
-          <Skills />
-        </section>
-
-        {/* ===================================================
-            PROJECTS
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="projects" />
-          <Projects />
-        </section>
-
-        {/* ===================================================
-            EXPERIENCE
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="experience" />
-          <Experience />
-        </section>
-
-        {/* ===================================================
-            EDUCATION
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="education" />
-          <Education />
-        </section>
-
-        {/* ===================================================
-            ACHIEVEMENTS
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="achievements" />
-          <Achievements />
-        </section>
-
-        {/* ===================================================
-            CERTIFICATIONS
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="certifications" />
-          <Certifications />
-        </section>
-
-        {/* ===================================================
-            PUBLICATIONS
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="publications" />
-          <Publications />
-        </section>
-
-        {/* ===================================================
-            RESUME
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <Resume />
-        </section>
-
-        {/* ===================================================
-            CONTACT
-        =================================================== */}
-
-        <section className="relative overflow-hidden">
-          <SectionGeometry variant="contact" />
-          <Contact />
-        </section>
-
-        {/* ===================================================
-            FOOTER
-        =================================================== */}
-
-        <Footer />
-
-      </div>
+      <ImmersiveExperience>
+        <GlobalGeometry />
+        <EngineeringWorkbench />
+        <div className="relative z-10">
+          <Hero />
+          <Navbar />
+          <section className="relative overflow-hidden"><SectionGeometry variant="about" /><About /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="skills" /><Skills /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="projects" /><Projects /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="experience" /><Experience /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="education" /><Education /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="achievements" /><Achievements /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="certifications" /><Certifications /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="publications" /><Publications /></section>
+          <section className="relative overflow-hidden"><Resume /></section>
+          <section className="relative overflow-hidden"><SectionGeometry variant="contact" /><Contact /></section>
+          <Footer />
+        </div>
+      </ImmersiveExperience>
     </main>
   );
 }
