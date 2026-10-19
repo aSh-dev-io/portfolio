@@ -3,7 +3,18 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/data";
+
+
+const primaryNavLinks = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
+  { label: "Achievements", href: "#achievements" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Publications", href: "#publications" },
+];
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -142,7 +153,7 @@ export default function Navbar() {
                   lg:flex
                 "
               >
-                {navLinks.map((link) => (
+                {primaryNavLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
@@ -276,7 +287,7 @@ export default function Navbar() {
                 >
                   <div className="flex flex-col gap-1">
 
-                    {navLinks.map((link) => (
+                    {primaryNavLinks.map((link) => (
                       <a
                         key={link.href}
                         href={link.href}
