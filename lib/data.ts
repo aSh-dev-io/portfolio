@@ -66,17 +66,17 @@ export const skillGroups = [
 export const projects = [
   {
     title: "NFC & Camera-Based Attendance System",
-    subtitle: "ESP32 • ESP32-CAM • Python",
+    subtitle: "ESP32 • ESP32-CAM • Embedded C",
 
     description:
-      "Engineered a dual-authentication smart attendance system using ESP32, ESP32-CAM, and Python, integrating NFC-based identification with camera-assisted verification. The solution enables secure, real-time attendance logging, cloud synchronization, and improved accuracy by reducing proxy attendance in educational and organizational environments.",
+      "Engineered a dual-authentication smart attendance system using ESP32, ESP32-CAM, and Embedded C, integrating NFC-based identification with camera-assisted verification. The solution enables secure, real-time attendance logging, cloud synchronization, and improved accuracy by reducing proxy attendance in educational and organizational environments.",
 
     duration: "3 months                                                                                                                                                               ",
 
     tags: [
       "ESP32",
       "ESP32-CAM",
-      "Python",
+      "Embedded C",
       "NFC",
       "IoT",
       "Cloud Integration",
@@ -103,7 +103,7 @@ export const projects = [
       "LoRaWAN",
       "IoT",
       "AI/Machine Learning",
-      "Python",
+      "Embedded C",
       "GIS Mapping",
       "Web Dashboard",
       "Pressure Sensors",
@@ -182,45 +182,45 @@ export const achievements = [
 
 export const certifications = [
   {
-    title: "Embedded Systems with ARM Cortex-M",
+    title: "Embedded Systems with AR…",
     issuer: "Arm",
     date: "Jan 29, 2026",
-    href: "#",
+    href: "https://coursera.org/share/a1e0b272d524120b8d20402e505a7eee",
   },
 
   {
-    title: "Programming for the Internet of Things Project",
+    title: "Programming for the Internet of Thin…",
     issuer: "University of California, Irvine (UC Irvine)",
     date: "Jan 23, 2026",
-    href: "#",
+    href: "https://coursera.org/share/ce4761b7e055d4ec9f66fa9954c076dd",
   },
 
   {
-    title: "MATLAB & Simulink Professional Learning Path",
+    title: "MATLAB & Simulink Professional Lea…",
     issuer: "MathWorks",
     date: "Jun 20, 2026",
-    href: "#",
+    href: "https://www.credly.com/users/ashwin-m.73efedd1",
   },
 
   {
     title: "Introduction to IoT",
     issuer: "Cisco",
     date: "Jul 16, 2026",
-    href: "#",
+    href: "https://www.credly.com/badges/8d3db7a4-5dd1-4a16-bb1d-03bd9d3e611a/public_url",
   },
 
   {
-    title: "Hindi Language Proficiency – Level 4",
+    title: "Hindi Language Proficiency–Level-4",
     issuer: "Dakshina Bharat Hindi Prachar Sabha",
     date: "Jul 8, 2026",
-    href: "#",
+    href: null,
   },
 
   {
-    title: "Hindi Spoken (Bolchal) Proficiency – Level 6",
+    title: "Hindi Spoken (Bolchdl) Proficiency–L…",
     issuer: "Dakshina Bharat Hindi Prachar Sabha",
     date: "Jul 8, 2026",
-    href: "#",
+    href: null,
   },
 ];
 

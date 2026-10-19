@@ -12,16 +12,14 @@ import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import GlobalGeometry from "@/components/background/GlobalGeometry";
-import EngineeringWorkbench from "@/components/background/EngineeringWorkbench";
 import SectionGeometry from "@/components/background/SectionGeometry";
 import ImmersiveExperience from "@/components/experience/ImmersiveExperience";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-[#050B12] text-foreground">
+    <main className="relative min-h-screen overflow-x-hidden bg-[#E9F1FA] text-foreground">
       <ImmersiveExperience>
         <GlobalGeometry />
-        <EngineeringWorkbench />
         <div className="relative z-10">
           <Hero />
           <Navbar />

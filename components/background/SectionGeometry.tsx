@@ -46,7 +46,7 @@ export default function SectionGeometry({
               w-[620px]
               rounded-full
               border
-              border-cyan-300/[0.035]
+              border-[#FFFA00]/[0.035]
             "
           />
 
@@ -57,7 +57,7 @@ export default function SectionGeometry({
               top-[18%]
               h-px
               w-[22%]
-              bg-cyan-300/[0.08]
+              bg-[#FFFA00]/[0.08]
             "
           />
         </>
@@ -139,7 +139,7 @@ export default function SectionGeometry({
               w-[520px]
               rounded-full
               border
-              border-cyan-300/[0.04]
+              border-[#FFFA00]/[0.04]
             "
           />
 
@@ -152,7 +152,7 @@ export default function SectionGeometry({
               w-[400px]
               rounded-full
               border
-              border-blue-400/[0.035]
+              border-[#FFEF44]/[0.035]
             "
           />
         </>
@@ -171,7 +171,7 @@ export default function SectionGeometry({
               top-[18%]
               h-[65%]
               w-px
-              bg-cyan-300/[0.07]
+              bg-[#FFFA00]/[0.07]
             "
           />
 
@@ -193,7 +193,7 @@ export default function SectionGeometry({
                 h-2
                 w-2
                 rounded-full
-                bg-cyan-300
+                bg-[#FFFA00]
               "
               style={{
                 top: `${top}%`,
@@ -209,9 +209,9 @@ export default function SectionGeometry({
 
       {variant === "education" && (
         <>
-          <div className="absolute left-[5%] top-[15%] h-28 w-28 border-l border-t border-cyan-300/[0.07]" />
+          <div className="absolute left-[5%] top-[15%] h-28 w-28 border-l border-t border-[#FFFA00]/[0.07]" />
 
-          <div className="absolute right-[5%] bottom-[15%] h-28 w-28 border-b border-r border-cyan-300/[0.07]" />
+          <div className="absolute right-[5%] bottom-[15%] h-28 w-28 border-b border-r border-[#FFFA00]/[0.07]" />
         </>
       )}
 
@@ -239,11 +239,11 @@ export default function SectionGeometry({
             -translate-y-1/2
             rounded-full
             border
-            border-cyan-300/[0.035]
+            border-[#FFFA00]/[0.035]
           "
         >
-          <div className="absolute inset-[100px] rounded-full border border-cyan-300/[0.025]" />
-          <div className="absolute inset-[200px] rounded-full border border-cyan-300/[0.02]" />
+          <div className="absolute inset-[100px] rounded-full border border-[#FFFA00]/[0.025]" />
+          <div className="absolute inset-[200px] rounded-full border border-[#FFFA00]/[0.02]" />
         </motion.div>
       )}
 
@@ -284,7 +284,7 @@ export default function SectionGeometry({
               right-[5%]
               top-[20%]
               h-px
-              bg-cyan-300/[0.06]
+              bg-[#FFFA00]/[0.06]
             "
           />
 
@@ -295,7 +295,7 @@ export default function SectionGeometry({
               top-[20%]
               h-16
               w-px
-              bg-cyan-300/[0.06]
+              bg-[#FFFA00]/[0.06]
             "
           />
         </>
@@ -326,7 +326,7 @@ export default function SectionGeometry({
             -translate-y-1/2
             rounded-full
             border
-            border-cyan-300
+            border-[#FFFA00]
           "
         />
       )}

@@ -12,7 +12,7 @@ export default function GlobalGeometry() {
           BASE COLOR
       ===================================================== */}
 
-      <div className="absolute inset-0 bg-[#050B12]" />
+      <div className="absolute inset-0 bg-[#2E2E2E]" />
 
       {/* =====================================================
           VERY SUBTLE TECHNICAL GRID
@@ -55,7 +55,7 @@ export default function GlobalGeometry() {
           w-[620px]
           rounded-full
           border
-          border-cyan-300/[0.045]
+          border-[#FFFA00]/[0.045]
         "
       >
         <div
@@ -64,7 +64,7 @@ export default function GlobalGeometry() {
             inset-[90px]
             rounded-full
             border
-            border-cyan-300/[0.025]
+            border-[#FFFA00]/[0.025]
           "
         />
 
@@ -77,7 +77,7 @@ export default function GlobalGeometry() {
             w-3
             -translate-x-1/2
             rounded-full
-            bg-cyan-300/20
+            bg-[#FFFA00]/20
           "
         />
       </motion.div>
@@ -104,7 +104,7 @@ export default function GlobalGeometry() {
           w-[700px]
           rounded-full
           border
-          border-cyan-300/[0.04]
+          border-[#FFFA00]/[0.04]
         "
       >
         <div
@@ -113,7 +113,7 @@ export default function GlobalGeometry() {
             inset-[120px]
             rounded-full
             border
-            border-cyan-300/[0.025]
+            border-[#FFFA00]/[0.025]
           "
         />
       </motion.div>
@@ -166,21 +166,21 @@ export default function GlobalGeometry() {
           d="M20 230 L95 175 L155 195 L225 105 L330 65"
           stroke="currentColor"
           strokeWidth="1"
-          className="text-cyan-300"
+          className="text-[#FFFA00]"
         />
 
         <path
           d="M95 175 L105 65 L185 40 L225 105"
           stroke="currentColor"
           strokeWidth="1"
-          className="text-cyan-300"
+          className="text-[#FFFA00]"
         />
 
         <path
           d="M155 195 L190 270 L290 220 L330 65"
           stroke="currentColor"
           strokeWidth="1"
-          className="text-cyan-300"
+          className="text-[#FFFA00]"
         />
 
         {[
@@ -200,7 +200,7 @@ export default function GlobalGeometry() {
             cy={cy}
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
         ))}
       </svg>
@@ -219,8 +219,8 @@ export default function GlobalGeometry() {
           opacity-[0.08]
         "
       >
-        <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-cyan-300" />
-        <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-cyan-300" />
+        <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-[#FFFA00]" />
+        <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-[#FFFA00]" />
       </div>
 
       <div
@@ -233,8 +233,8 @@ export default function GlobalGeometry() {
           opacity-[0.08]
         "
       >
-        <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-cyan-300" />
-        <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-cyan-300" />
+        <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-[#FFFA00]" />
+        <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-[#FFFA00]" />
       </div>
 
       {/* =====================================================
@@ -258,7 +258,7 @@ export default function GlobalGeometry() {
           h-2
           w-2
           rounded-full
-          bg-cyan-300
+          bg-[#FFFA00]
         "
         style={{
           boxShadow: "0 0 18px rgba(56,242,255,0.5)",

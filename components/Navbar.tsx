@@ -3,7 +3,18 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/lib/data";
+
+
+const primaryNavLinks = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
+  { label: "Achievements", href: "#achievements" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Publications", href: "#publications" },
+];
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -61,10 +72,10 @@ export default function Navbar() {
             fixed
             left-0
             right-0
-            top-4
+            top-3
             z-50
-            px-4
-            sm:px-6
+            px-3
+            sm:px-5
           "
         >
           <div className="section-container">
@@ -81,17 +92,14 @@ export default function Navbar() {
                 justify-between
                 rounded-full
                 border
-                border-cyan-400/20
-                bg-gradient-to-r
-                from-[#061525]/95
-                via-[#0A2036]/95
-                to-[#061525]/95
-                px-4
-                py-2.5
+                border-[rgba(255,250,0,0.16)]
+                bg-[#383838]/95
+                px-3
+                py-1.5
                 backdrop-blur-2xl
                 shadow-[0_8px_35px_rgba(0,0,0,0.45)]
                 ring-1
-                ring-cyan-400/5
+                ring-[#FFFA00]/5
                 transition-all
                 duration-300
               "
@@ -106,20 +114,16 @@ export default function Navbar() {
                 aria-label="Back to introduction"
                 className="
                   flex
-                  h-10
-                  w-10
+                  size-8
                   shrink-0
                   items-center
                   justify-center
                   rounded-full
-                  bg-gradient-to-br
-                  from-cyan-300
-                  via-cyan-400
-                  to-teal-400
+                  bg-[#FFFA00]
                   text-sm
                   font-bold
-                  text-[#04111F]
-                  shadow-[0_0_20px_rgba(45,212,191,0.25)]
+                  text-[#2E2E2E]
+                  shadow-[0_0_20px_rgba(255,250,0,0.2)]
                   transition-all
                   duration-300
                   hover:scale-105
@@ -137,25 +141,31 @@ export default function Navbar() {
                 aria-label="Primary navigation"
                 className="
                   hidden
+                  min-w-0
+                  flex-1
                   items-center
-                  gap-1
-                  lg:flex
+                  justify-center
+                  gap-0.5
+                  md:flex
+                  lg:gap-1
                 "
               >
-                {navLinks.map((link) => (
+                {primaryNavLinks.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
                     className="
                       rounded-full
-                      px-3.5
-                      py-2
-                      text-sm
-                      text-slate-400
+                      px-2
+                      py-1.5
+                      text-xs
+                      lg:px-3
+                      lg:text-sm
+                      text-[#C6C6C6]
                       transition-all
                       duration-300
-                      hover:bg-cyan-400/10
-                      hover:text-cyan-200
+                      hover:bg-[#FFFA00]/10
+                      hover:text-[#FFFA00]
                     "
                   >
                     {link.label}
@@ -167,7 +177,7 @@ export default function Navbar() {
                   CONTACT BUTTON
               ================================================= */}
 
-              <div className="hidden lg:block">
+              <div className="hidden shrink-0 md:block">
                 <a
                   href="#contact"
                   className="
@@ -176,15 +186,13 @@ export default function Navbar() {
                     justify-center
                     rounded-full
                     border
-                    border-cyan-300/20
-                    bg-gradient-to-r
-                    from-cyan-400
-                    to-teal-400
-                    !px-5
-                    !py-2.5
+                    border-[#FFFA00]/30
+                    bg-[#FFFA00]
+                    !px-4
+                    !py-2
                     text-[13px]
                     font-semibold
-                    text-[#04111F]
+                    text-[#2E2E2E]
                     shadow-[0_0_20px_rgba(45,212,191,0.18)]
                     transition-all
                     duration-300
@@ -207,21 +215,20 @@ export default function Navbar() {
                 onClick={() => setOpen((value) => !value)}
                 className="
                   flex
-                  h-10
-                  w-10
+                  size-8
                   items-center
                   justify-center
                   rounded-full
                   border
-                  border-cyan-400/20
-                  bg-cyan-400/5
-                  text-slate-200
+                  border-[rgba(255,250,0,0.16)]
+                  bg-[#FFFA00]/5
+                  text-[#FFFFFF]
                   transition-all
                   duration-300
-                  hover:border-cyan-400/40
-                  hover:bg-cyan-400/10
-                  hover:text-cyan-200
-                  lg:hidden
+                  hover:border-[#FFFA00]/40
+                  hover:bg-[#FFFA00]/10
+                  hover:text-[#FFFA00]
+                  md:hidden
                 "
               >
                 {open ? <X size={18} /> : <Menu size={18} />}
@@ -258,17 +265,15 @@ export default function Navbar() {
                 className="
                   section-container
                   mt-2
-                  lg:hidden
+                  md:hidden
                 "
               >
                 <div
                   className="
                     rounded-2xl
                     border
-                    border-cyan-400/20
-                    bg-gradient-to-b
-                    from-[#081B2E]/98
-                    to-[#061525]/98
+                    border-[rgba(255,250,0,0.16)]
+                    bg-[#383838]/98
                     p-3
                     shadow-[0_15px_40px_rgba(0,0,0,0.45)]
                     backdrop-blur-2xl
@@ -276,7 +281,7 @@ export default function Navbar() {
                 >
                   <div className="flex flex-col gap-1">
 
-                    {navLinks.map((link) => (
+                    {primaryNavLinks.map((link) => (
                       <a
                         key={link.href}
                         href={link.href}
@@ -286,11 +291,11 @@ export default function Navbar() {
                           px-4
                           py-3
                           text-sm
-                          text-slate-400
+                          text-[#C6C6C6]
                           transition-all
                           duration-300
-                          hover:bg-cyan-400/10
-                          hover:text-cyan-200
+                          hover:bg-[#FFFA00]/10
+                          hover:text-[#FFFA00]
                         "
                       >
                         {link.label}
@@ -308,15 +313,13 @@ export default function Navbar() {
                         justify-center
                         rounded-xl
                         border
-                        border-cyan-300/20
-                        bg-gradient-to-r
-                        from-cyan-400
-                        to-teal-400
+                        border-[#FFFA00]/30
+                        bg-[#FFFA00]
                         px-5
                         py-3
                         text-sm
                         font-semibold
-                        text-[#04111F]
+                        text-[#2E2E2E]
                         shadow-[0_0_20px_rgba(45,212,191,0.18)]
                         transition-all
                         duration-300

@@ -22,7 +22,7 @@ export const projects: Project[] = [
       "ESP32-CAM",
       "RFID",
       "Firebase",
-      "Python",
+      "Embedded C",
       "Computer Vision",
       "IoT",
     ],
@@ -102,7 +102,7 @@ export const projects: Project[] = [
       "ESP32",
       "LoRaWAN",
       "MQTT",
-      "Python",
+      "Embedded C",
       "Machine Learning",
       "GIS",
       "Cloud",
@@ -251,89 +251,6 @@ export const projects: Project[] = [
     "Mobile emergency alerts",
     "Smart-city disaster management integration",
     "Automated emergency response coordination",
-  ],
-},
-{
-  id: "smart-dustbin",
-  featured: false,
-
-  title: "Smart Dustbin for Community Waste Management",
-  subtitle: "IoT • Smart Waste Management • Community Outreach",
-
-  description:
-    "A proposed smart waste-management solution designed for Selevapuram village as part of a community outreach initiative, focusing on cleaner waste disposal, better segregation, and improved awareness of responsible waste management.",
-
-  // Image inside /public
-  image: "/Smart-dustbin.jpg",
-
-  duration: "Outreach Project",
-  role: "Project Designer",
-
-  tags: [
-    "IoT",
-    "Smart Waste Management",
-    "Waste Segregation",
-    "Embedded Systems",
-    "Sensors",
-    "Automation",
-    "Community Outreach",
-  ],
-
-  github: "https://github.com/aSh-dev-io",
-  demoHref: "#",
-
-  overview:
-    "Designed a smart dustbin concept to address waste-management challenges faced by people in Selevapuram village. The proposal focuses on combining simple automation and sensing technologies with practical waste-management practices to create a cleaner and more sustainable community environment.",
-
-  problem:
-    "Improper waste disposal and limited waste segregation can create unhygienic surroundings and increase the difficulty of managing household and community waste. The project was proposed to explore a practical technology-based solution suitable for a village environment.",
-
-  solution:
-    "Designed a smart dustbin concept that can support improved waste disposal and segregation through sensors and automated mechanisms. The proposed system is intended to make waste handling more convenient for residents while supporting better community-level waste management.",
-
-  architecture: [
-    "Waste Input",
-    "Detection Sensors",
-    "Embedded Controller",
-    "Waste Classification",
-    "Automated Segregation",
-    "Waste Collection",
-    "Status Monitoring",
-  ],
-
-  features: [
-    "Smart waste detection",
-    "Waste segregation concept",
-    "Automated waste handling",
-    "Bin status monitoring",
-    "Improved disposal awareness",
-    "Community-focused design",
-  ],
-
-  challenges: [
-    "Designing a solution suitable for village conditions",
-    "Keeping the system affordable and practical",
-    "Handling different types of waste",
-    "Designing a simple user-friendly mechanism",
-    "Considering maintenance and reliability",
-  ],
-
-  learnings: [
-    "Community-focused engineering",
-    "IoT system planning",
-    "Sensor-based automation",
-    "Embedded system design",
-    "Problem identification",
-    "Sustainable technology design",
-  ],
-
-  future: [
-    "Build and test a working prototype",
-    "Add IoT-based bin monitoring",
-    "Introduce fill-level notifications",
-    "Improve automatic waste classification",
-    "Develop a mobile monitoring interface",
-    "Deploy and evaluate the system in the village",
   ],
 },
 ];

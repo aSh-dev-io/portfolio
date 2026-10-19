@@ -274,7 +274,7 @@ export default function Education() {
                       justify-center
                       rounded-full
                       border
-                      bg-[#06111A]
+                      bg-white
                     "
                     style={{
                       [isRight ? "left" : "right"]:
@@ -367,7 +367,7 @@ export default function Education() {
                       overflow-hidden
                       rounded-2xl
                       border
-                      bg-[#07131D]/95
+                      bg-white/95
                       p-7
                       backdrop-blur-xl
                     "
@@ -714,7 +714,7 @@ export default function Education() {
                     justify-center
                     rounded-full
                     border
-                    bg-[#07131D]
+                    bg-white
                   "
                   style={{
                     borderColor:
@@ -732,7 +732,7 @@ export default function Education() {
                   className="
                     rounded-2xl
                     border
-                    bg-[#07131D]/95
+                    bg-white/95
                     p-6
                     backdrop-blur-xl
                   "
