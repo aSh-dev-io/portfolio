@@ -72,10 +72,10 @@ export default function Navbar() {
             fixed
             left-0
             right-0
-            top-4
+            top-3
             z-50
-            px-4
-            sm:px-6
+            px-3
+            sm:px-5
           "
         >
           <div className="section-container">
@@ -97,8 +97,8 @@ export default function Navbar() {
                 from-[#061525]/95
                 via-[#0A2036]/95
                 to-[#061525]/95
-                px-4
-                py-2.5
+                px-3
+                py-1.5
                 backdrop-blur-2xl
                 shadow-[0_8px_35px_rgba(0,0,0,0.45)]
                 ring-1
@@ -117,8 +117,7 @@ export default function Navbar() {
                 aria-label="Back to introduction"
                 className="
                   flex
-                  h-10
-                  w-10
+                  size-8
                   shrink-0
                   items-center
                   justify-center
@@ -159,8 +158,8 @@ export default function Navbar() {
                     href={link.href}
                     className="
                       rounded-full
-                      px-3.5
-                      py-2
+                      px-3
+                      py-1.5
                       text-sm
                       text-slate-400
                       transition-all
@@ -191,8 +190,8 @@ export default function Navbar() {
                     bg-gradient-to-r
                     from-cyan-400
                     to-teal-400
-                    !px-5
-                    !py-2.5
+                    !px-4
+                    !py-2
                     text-[13px]
                     font-semibold
                     text-[#04111F]
@@ -218,8 +217,7 @@ export default function Navbar() {
                 onClick={() => setOpen((value) => !value)}
                 className="
                   flex
-                  h-10
-                  w-10
+                  size-8
                   items-center
                   justify-center
                   rounded-full
