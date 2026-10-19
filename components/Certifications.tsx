@@ -20,13 +20,22 @@ export default function Certifications() {
             <p className="mt-1 text-sm text-muted">{cert.issuer}</p>
             <p className="mt-1 text-xs text-muted2">{cert.date}</p>
 
-            <a
-              href={cert.href}
-              className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-dim"
-            >
-              View Credential
-              <ExternalLink size={14} />
-            </a>
+            {cert.href ? (
+              <a
+                href={cert.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View credential for ${cert.title}`}
+                className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-dim"
+              >
+                View Credential
+                <ExternalLink size={14} />
+              </a>
+            ) : (
+              <span className="mt-5 inline-flex items-center text-sm text-muted2">
+                Credential link pending
+              </span>
+            )}
           </FadeIn>
         ))}
       </div>
