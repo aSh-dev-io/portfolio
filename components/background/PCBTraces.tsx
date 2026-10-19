@@ -8,9 +8,9 @@ export default function PCBTraces() {
       <defs>
 
         <linearGradient id="trace" x1="0" x2="1">
-          <stop offset="0%" stopColor="#00ABE4" stopOpacity="0.15" />
-          <stop offset="50%" stopColor="#00ABE4" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="#00ABE4" stopOpacity="0.15" />
+          <stop offset="0%" stopColor="#FFFA00" stopOpacity="0.15" />
+          <stop offset="50%" stopColor="#FFFA00" stopOpacity="0.55" />
+          <stop offset="100%" stopColor="#FFFA00" stopOpacity="0.15" />
         </linearGradient>
 
       </defs>
@@ -23,9 +23,9 @@ export default function PCBTraces() {
         fill="none"
       />
 
-      <circle cx="250" cy="150" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="250" cy="250" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="420" cy="250" r="4" fill="#00ABE4" opacity=".35"/>
+      <circle cx="250" cy="150" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="250" cy="250" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="420" cy="250" r="4" fill="#FFFA00" opacity=".35"/>
 
       {/* Bottom Left */}
       <path
@@ -35,9 +35,9 @@ export default function PCBTraces() {
         fill="none"
       />
 
-      <circle cx="320" cy="720" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="320" cy="600" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="500" cy="600" r="4" fill="#00ABE4" opacity=".35"/>
+      <circle cx="320" cy="720" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="320" cy="600" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="500" cy="600" r="4" fill="#FFFA00" opacity=".35"/>
 
       {/* Top Right */}
       <path
@@ -47,9 +47,9 @@ export default function PCBTraces() {
         fill="none"
       />
 
-      <circle cx="1350" cy="120" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="1350" cy="240" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="1180" cy="240" r="4" fill="#00ABE4" opacity=".35"/>
+      <circle cx="1350" cy="120" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="1350" cy="240" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="1180" cy="240" r="4" fill="#FFFA00" opacity=".35"/>
 
       {/* Bottom Right */}
       <path
@@ -59,9 +59,9 @@ export default function PCBTraces() {
         fill="none"
       />
 
-      <circle cx="1320" cy="760" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="1320" cy="640" r="4" fill="#00ABE4" opacity=".35"/>
-      <circle cx="1080" cy="640" r="4" fill="#00ABE4" opacity=".35"/>
+      <circle cx="1320" cy="760" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="1320" cy="640" r="4" fill="#FFFA00" opacity=".35"/>
+      <circle cx="1080" cy="640" r="4" fill="#FFFA00" opacity=".35"/>
 
     </svg>
   );

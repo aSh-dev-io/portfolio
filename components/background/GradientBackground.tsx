@@ -7,7 +7,7 @@ export default function GradientBackground() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg,#07182D 0%,#081B33 35%,#081A30 65%,#060F1E 100%)",
+            "linear-gradient(180deg,#3A2148 0%,#2E2E2E 35%,#2E2E2E 65%,#252525 100%)",
         }}
       />
 
@@ -27,7 +27,7 @@ export default function GradientBackground() {
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(0,229,255,0.22) 0%, rgba(0,150,255,0.10) 35%, rgba(0,0,0,0) 75%)",
+            "radial-gradient(circle, rgba(255,250,0,0.12) 0%, rgba(255,239,68,0.06) 35%, rgba(0,0,0,0) 75%)",
         }}
       />
 
@@ -46,7 +46,7 @@ export default function GradientBackground() {
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(0,229,255,0.25) 0%, rgba(0,130,255,0.10) 45%, rgba(0,0,0,0) 80%)",
+            "radial-gradient(circle, rgba(255,250,0,0.14) 0%, rgba(255,239,68,0.06) 45%, rgba(0,0,0,0) 80%)",
         }}
       />
 
@@ -64,7 +64,7 @@ export default function GradientBackground() {
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(80,180,255,0.12) 0%, rgba(0,0,0,0) 75%)",
+            "radial-gradient(circle, rgba(255,250,0,0.06) 0%, rgba(0,0,0,0) 75%)",
         }}
       />
 
@@ -82,7 +82,7 @@ export default function GradientBackground() {
         "
         style={{
           background:
-            "radial-gradient(circle, rgba(0,229,255,0.18) 0%, rgba(0,0,0,0) 75%)",
+            "radial-gradient(circle, rgba(255,250,0,0.08) 0%, rgba(0,0,0,0) 75%)",
         }}
       />
 
@@ -91,7 +91,7 @@ export default function GradientBackground() {
         className="absolute inset-x-0 bottom-0 h-[320px]"
         style={{
           background:
-            "linear-gradient(to top, rgba(4,8,18,1), rgba(4,8,18,0))",
+            "linear-gradient(to top, rgba(46,46,46,1), rgba(46,46,46,0))",
         }}
       />
 

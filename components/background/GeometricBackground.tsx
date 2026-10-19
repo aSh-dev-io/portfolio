@@ -57,7 +57,7 @@ export default function GeometricBackground() {
           w-[520px]
           rounded-full
           border
-          border-cyan-300/[0.055]
+          border-[#FFFA00]/[0.055]
         "
       >
         <div
@@ -66,7 +66,7 @@ export default function GeometricBackground() {
             inset-[70px]
             rounded-full
             border
-            border-cyan-300/[0.035]
+            border-[#FFFA00]/[0.035]
           "
         />
 
@@ -79,7 +79,7 @@ export default function GeometricBackground() {
             w-2
             -translate-x-1/2
             rounded-full
-            bg-cyan-300/20
+            bg-[#FFFA00]/20
           "
         />
       </motion.div>
@@ -150,7 +150,7 @@ export default function GeometricBackground() {
           h-px
           w-[45%]
           rotate-[-18deg]
-          bg-cyan-300/20
+          bg-[#FFFA00]/20
         "
       />
 
@@ -169,14 +169,14 @@ export default function GeometricBackground() {
             d="M20 180 L100 130 L155 155 L230 80 L270 110"
             stroke="currentColor"
             strokeWidth="1"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <path
             d="M100 130 L105 50 L190 30 L230 80"
             stroke="currentColor"
             strokeWidth="1"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <circle
@@ -184,7 +184,7 @@ export default function GeometricBackground() {
             cy="180"
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <circle
@@ -192,7 +192,7 @@ export default function GeometricBackground() {
             cy="130"
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <circle
@@ -200,7 +200,7 @@ export default function GeometricBackground() {
             cy="155"
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <circle
@@ -208,7 +208,7 @@ export default function GeometricBackground() {
             cy="80"
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
 
           <circle
@@ -216,7 +216,7 @@ export default function GeometricBackground() {
             cy="30"
             r="3"
             fill="currentColor"
-            className="text-cyan-300"
+            className="text-[#FFFA00]"
           />
         </svg>
       </div>
@@ -242,7 +242,7 @@ export default function GeometricBackground() {
           w-[560px]
           rounded-full
           border
-          border-cyan-300/[0.045]
+          border-[#FFFA00]/[0.045]
         "
       />
 
@@ -262,8 +262,8 @@ export default function GeometricBackground() {
             opacity-[0.12]
           "
         >
-          <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-cyan-300" />
-          <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-cyan-300" />
+          <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-[#FFFA00]" />
+          <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-[#FFFA00]" />
         </span>
 
         <span
@@ -276,8 +276,8 @@ export default function GeometricBackground() {
             opacity-[0.1]
           "
         >
-          <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-cyan-300" />
-          <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-cyan-300" />
+          <span className="absolute left-1/2 h-full w-px -translate-x-1/2 bg-[#FFFA00]" />
+          <span className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-[#FFFA00]" />
         </span>
 
         <span
@@ -289,7 +289,7 @@ export default function GeometricBackground() {
             w-3
             rounded-full
             border
-            border-cyan-300/20
+            border-[#FFFA00]/20
           "
         />
       </div>

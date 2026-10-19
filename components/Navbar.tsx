@@ -92,17 +92,14 @@ export default function Navbar() {
                 justify-between
                 rounded-full
                 border
-                border-cyan-400/20
-                bg-gradient-to-r
-                from-[#061525]/95
-                via-[#0A2036]/95
-                to-[#061525]/95
+                border-[rgba(255,250,0,0.16)]
+                bg-[#383838]/95
                 px-3
                 py-1.5
                 backdrop-blur-2xl
                 shadow-[0_8px_35px_rgba(0,0,0,0.45)]
                 ring-1
-                ring-cyan-400/5
+                ring-[#FFFA00]/5
                 transition-all
                 duration-300
               "
@@ -122,14 +119,11 @@ export default function Navbar() {
                   items-center
                   justify-center
                   rounded-full
-                  bg-gradient-to-br
-                  from-cyan-300
-                  via-cyan-400
-                  to-teal-400
+                  bg-[#FFFA00]
                   text-sm
                   font-bold
-                  text-[#04111F]
-                  shadow-[0_0_20px_rgba(45,212,191,0.25)]
+                  text-[#2E2E2E]
+                  shadow-[0_0_20px_rgba(255,250,0,0.2)]
                   transition-all
                   duration-300
                   hover:scale-105
@@ -167,11 +161,11 @@ export default function Navbar() {
                       text-xs
                       lg:px-3
                       lg:text-sm
-                      text-slate-400
+                      text-[#C6C6C6]
                       transition-all
                       duration-300
-                      hover:bg-cyan-400/10
-                      hover:text-cyan-200
+                      hover:bg-[#FFFA00]/10
+                      hover:text-[#FFFA00]
                     "
                   >
                     {link.label}
@@ -192,15 +186,13 @@ export default function Navbar() {
                     justify-center
                     rounded-full
                     border
-                    border-cyan-300/20
-                    bg-gradient-to-r
-                    from-cyan-400
-                    to-teal-400
+                    border-[#FFFA00]/30
+                    bg-[#FFFA00]
                     !px-4
                     !py-2
                     text-[13px]
                     font-semibold
-                    text-[#04111F]
+                    text-[#2E2E2E]
                     shadow-[0_0_20px_rgba(45,212,191,0.18)]
                     transition-all
                     duration-300
@@ -228,14 +220,14 @@ export default function Navbar() {
                   justify-center
                   rounded-full
                   border
-                  border-cyan-400/20
-                  bg-cyan-400/5
-                  text-slate-200
+                  border-[rgba(255,250,0,0.16)]
+                  bg-[#FFFA00]/5
+                  text-[#FFFFFF]
                   transition-all
                   duration-300
-                  hover:border-cyan-400/40
-                  hover:bg-cyan-400/10
-                  hover:text-cyan-200
+                  hover:border-[#FFFA00]/40
+                  hover:bg-[#FFFA00]/10
+                  hover:text-[#FFFA00]
                   md:hidden
                 "
               >
@@ -280,10 +272,8 @@ export default function Navbar() {
                   className="
                     rounded-2xl
                     border
-                    border-cyan-400/20
-                    bg-gradient-to-b
-                    from-[#081B2E]/98
-                    to-[#061525]/98
+                    border-[rgba(255,250,0,0.16)]
+                    bg-[#383838]/98
                     p-3
                     shadow-[0_15px_40px_rgba(0,0,0,0.45)]
                     backdrop-blur-2xl
@@ -301,11 +291,11 @@ export default function Navbar() {
                           px-4
                           py-3
                           text-sm
-                          text-slate-400
+                          text-[#C6C6C6]
                           transition-all
                           duration-300
-                          hover:bg-cyan-400/10
-                          hover:text-cyan-200
+                          hover:bg-[#FFFA00]/10
+                          hover:text-[#FFFA00]
                         "
                       >
                         {link.label}
@@ -323,15 +313,13 @@ export default function Navbar() {
                         justify-center
                         rounded-xl
                         border
-                        border-cyan-300/20
-                        bg-gradient-to-r
-                        from-cyan-400
-                        to-teal-400
+                        border-[#FFFA00]/30
+                        bg-[#FFFA00]
                         px-5
                         py-3
                         text-sm
                         font-semibold
-                        text-[#04111F]
+                        text-[#2E2E2E]
                         shadow-[0_0_20px_rgba(45,212,191,0.18)]
                         transition-all
                         duration-300
