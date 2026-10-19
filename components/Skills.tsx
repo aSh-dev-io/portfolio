@@ -53,7 +53,7 @@ const capabilities = [
     skills: [
       "C",
       "C++",
-      "Python",
+      "Embedded C",
       "MATLAB",
       "Git",
       "GitHub",
@@ -796,7 +796,7 @@ function CapabilityBlock({
         overflow-hidden
         border
         border-white/[0.09]
-        bg-[#07131D]
+        bg-white
         p-7
         transition-colors
         duration-500

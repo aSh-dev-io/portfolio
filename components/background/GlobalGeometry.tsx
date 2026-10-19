@@ -12,7 +12,7 @@ export default function GlobalGeometry() {
           BASE COLOR
       ===================================================== */}
 
-      <div className="absolute inset-0 bg-[#050B12]" />
+      <div className="absolute inset-0 bg-[#E9F1FA]" />
 
       {/* =====================================================
           VERY SUBTLE TECHNICAL GRID

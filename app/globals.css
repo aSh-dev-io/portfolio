@@ -7,31 +7,31 @@
 }
 
 html {
-  background-color: #0a0d0c;
+  background-color: #E9F1FA;
 }
 
 body {
-  background-color: #0a0d0c;
-  color: #edefee;
+  background-color: #E9F1FA;
+  color: #12304A;
 }
 
 ::selection {
-  background: rgba(62, 207, 178, 0.25);
-  color: #edefee;
+  background: rgba(0, 171, 228, 0.18);
+  color: #12304A;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0d0c;
+  background: #E9F1FA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #222726;
+  background: #C9D9E8;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2f3534;
+  background: #8FA7B8;
 }
 
 .section-container {
@@ -84,14 +84,14 @@ body {
 }
 
 .workbench-display {
-  @apply absolute right-[12vw] top-[23vh] w-[23vw] border border-accent/20 bg-[#081019]/90 p-4 text-accent shadow-[0_0_60px_rgba(58,206,201,0.06)];
+  @apply absolute right-[12vw] top-[23vh] w-[23vw] border border-accent/20 bg-[#FFFFFF]/90 p-4 text-accent shadow-[0_0_60px_rgba(58,206,201,0.06)];
   transform: perspective(900px) rotateY(-12deg) rotateX(5deg);
 }
 
 .workbench-waveform { @apply mt-4 h-auto w-full; }
 .workbench-readout { @apply mt-3 flex justify-between font-mono text-[9px] uppercase tracking-widest text-muted; }
-.workbench-pcb { @apply absolute bottom-[12vh] right-[9vw] h-40 w-64 border border-accent/25 bg-[#122b2b]/80 shadow-[0_20px_60px_rgba(0,0,0,0.4)]; transform: perspective(800px) rotateX(54deg) rotateZ(-8deg); }
-.pcb-chip { @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-accent/40 bg-[#0b171b] px-4 py-3 font-mono text-[10px] tracking-widest text-accent; }
+.workbench-pcb { @apply absolute bottom-[12vh] right-[9vw] h-40 w-64 border border-accent/25 bg-[#DCEBF7]/80 shadow-[0_20px_60px_rgba(0,0,0,0.4)]; transform: perspective(800px) rotateX(54deg) rotateZ(-8deg); }
+.pcb-chip { @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-accent/40 bg-[#FFFFFF] px-4 py-3 font-mono text-[10px] tracking-widest text-accent; }
 .pcb-trace { @apply absolute h-px bg-accent/50; }
 .trace-a { @apply left-4 top-8 w-44; transform: rotate(17deg); }
 .trace-b { @apply bottom-9 right-3 w-40; transform: rotate(-14deg); }
@@ -109,21 +109,21 @@ body {
 
 .experience-world { @apply pointer-events-none fixed inset-0 z-[2] scale-[1.015] opacity-0 transition-[opacity,transform] duration-700 ease-out; }
 .experience-world--ready { @apply scale-100 opacity-100; }
-.engineering-scene { @apply absolute inset-0; background: radial-gradient(circle at 68% 48%, rgba(45, 139, 143, 0.1), transparent 34%), linear-gradient(115deg, rgba(5, 11, 18, 0.9), rgba(5, 11, 18, 0.36)); }
+.engineering-scene { @apply absolute inset-0; background: radial-gradient(circle at 68% 48%, rgba(0, 171, 228, 0.12), transparent 34%), linear-gradient(115deg, rgba(233, 241, 250, 0.94), rgba(233, 241, 250, 0.46)); }
 .engineering-scene canvas { @apply h-full w-full; }
-.scene-fallback { @apply absolute inset-0 overflow-hidden; background: radial-gradient(circle at 73% 46%, rgba(47, 160, 159, .13), transparent 31%); }
+.scene-fallback { @apply absolute inset-0 overflow-hidden; background: radial-gradient(circle at 73% 46%, rgba(0, 171, 228, .13), transparent 31%); }
 .fallback-trace { @apply absolute h-px bg-accent/70 shadow-[0_0_16px_rgba(84,229,221,.45)]; transform-origin: left; }
 .fallback-trace--one { left: 54%; top: 55%; width: 24vw; transform: rotate(-15deg); }
 .fallback-trace--two { left: 61%; top: 63%; width: 18vw; transform: rotate(19deg); }
 .fallback-pcb { @apply absolute right-[13vw] top-[48vh] flex h-32 w-56 items-center justify-center border border-accent/30 bg-[#102c30]/80 font-mono text-[10px] tracking-[.22em] text-accent shadow-[0_20px_60px_rgba(0,0,0,.4)]; transform: perspective(800px) rotateX(54deg) rotateZ(-8deg); }
 .fallback-pcb i { @apply absolute size-1 rounded-full bg-accent; }
 .fallback-pcb i:nth-of-type(1) { left: 16px; top: 22px; }.fallback-pcb i:nth-of-type(2) { right: 28px; top: 16px; }.fallback-pcb i:nth-of-type(3) { bottom: 18px; left: 44px; }
-.fallback-display { @apply absolute right-[18vw] top-[24vh] w-[23vw] border border-accent/20 bg-[#081019]/90 p-4 text-accent shadow-[0_0_60px_rgba(58,206,201,.08)]; }
-.fallback-display span { @apply instrument-label; }.fallback-wave { @apply mt-5 h-12 border-b border-accent/60; background: linear-gradient(135deg, transparent 34%, rgba(84,229,221,.8) 35%, transparent 36%, transparent 58%, rgba(84,229,221,.8) 59%, transparent 60%); }
+.fallback-display { @apply absolute right-[18vw] top-[24vh] w-[23vw] border border-accent/20 bg-[#FFFFFF]/90 p-4 text-accent shadow-[0_0_60px_rgba(58,206,201,.08)]; }
+.fallback-display span { @apply instrument-label; }.fallback-wave { @apply mt-5 h-12 border-b border-accent/60; background: linear-gradient(135deg, transparent 34%, rgba(0,171,228,.8) 35%, transparent 36%, transparent 58%, rgba(0,171,228,.8) 59%, transparent 60%); }
 .fallback-readout { @apply absolute bottom-[18vh] right-[6vw] flex gap-3 font-mono text-[10px] tracking-[.2em] text-accent/60; }
 .portfolio-content { @apply relative z-10 opacity-0 transition-opacity duration-1000; }
 .portfolio-content--ready { @apply opacity-100; }
-.boot-sequence { @apply fixed inset-0 z-[50] overflow-hidden bg-[#050b12] text-accent; transition: opacity .7s ease, visibility .7s ease; }
+.boot-sequence { @apply fixed inset-0 z-[50] overflow-hidden bg-[#E9F1FA] text-accent; transition: opacity .7s ease, visibility .7s ease; }
 .boot-sequence--exit { opacity: 0; visibility: hidden; pointer-events: none; }
 .boot-grid { @apply absolute inset-0 opacity-25; background-image: linear-gradient(rgba(84,229,221,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(84,229,221,.055) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(circle, black, transparent 68%); animation: boot-grid-in .8s ease-out both; }
 .boot-core { @apply absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 text-center; }
@@ -131,7 +131,7 @@ body {
 .boot-core .instrument-label { animation: boot-rise .65s .45s ease-out both; }
 .boot-core strong { @apply font-mono text-xs uppercase tracking-[.3em] text-foreground/80; animation: boot-rise .65s .72s ease-out both; }
 .boot-rule { @apply mt-3 h-px w-[min(28rem,64vw)] overflow-hidden bg-white/10; }.boot-rule i { @apply block h-full w-1/3 bg-accent; animation: boot-rule 1.8s .85s cubic-bezier(.55,0,.2,1) infinite; }
-.boot-states { @apply flex w-[min(28rem,64vw)] justify-between border-y border-white/[0.08] py-3 font-mono text-[9px] uppercase tracking-[.18em] text-accent/55; }.boot-states span { @apply flex items-center gap-2; }.boot-states i { @apply size-1 rounded-full bg-accent/40; }.boot-states i.is-ready { @apply bg-accent shadow-[0_0_10px_rgba(84,229,221,.8)]; }
+.boot-states { @apply flex w-[min(28rem,64vw)] justify-between border-y border-white/[0.08] py-3 font-mono text-[9px] uppercase tracking-[.18em] text-accent/55; }.boot-states span { @apply flex items-center gap-2; }.boot-states i { @apply size-1 rounded-full bg-accent/40; }.boot-states i.is-ready { @apply bg-accent shadow-[0_0_10px_rgba(0,171,228,.8)]; }
 .boot-status, .boot-coordinate { @apply font-mono text-[9px] uppercase tracking-[.18em] text-accent/50; }.boot-status { @apply mt-1; }
 .boot-coordinate { @apply absolute; }.boot-coordinate--one { @apply left-[8vw] top-[18vh]; }.boot-coordinate--two { @apply bottom-[18vh] right-[9vw]; }
 .boot-signal { @apply absolute left-[12vw] right-[12vw] top-1/2 h-px bg-accent/20; }.boot-signal::after { content: ""; @apply absolute left-0 top-1/2 size-1 -translate-y-1/2 rounded-full bg-accent shadow-[0_0_18px_6px_rgba(84,229,221,.55)]; animation: boot-signal 1.9s 1s cubic-bezier(.55,0,.2,1) infinite; }

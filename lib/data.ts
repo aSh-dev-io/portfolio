@@ -66,17 +66,17 @@ export const skillGroups = [
 export const projects = [
   {
     title: "NFC & Camera-Based Attendance System",
-    subtitle: "ESP32 • ESP32-CAM • Python",
+    subtitle: "ESP32 • ESP32-CAM • Embedded C",
 
     description:
-      "Engineered a dual-authentication smart attendance system using ESP32, ESP32-CAM, and Python, integrating NFC-based identification with camera-assisted verification. The solution enables secure, real-time attendance logging, cloud synchronization, and improved accuracy by reducing proxy attendance in educational and organizational environments.",
+      "Engineered a dual-authentication smart attendance system using ESP32, ESP32-CAM, and Embedded C, integrating NFC-based identification with camera-assisted verification. The solution enables secure, real-time attendance logging, cloud synchronization, and improved accuracy by reducing proxy attendance in educational and organizational environments.",
 
     duration: "3 months                                                                                                                                                               ",
 
     tags: [
       "ESP32",
       "ESP32-CAM",
-      "Python",
+      "Embedded C",
       "NFC",
       "IoT",
       "Cloud Integration",
@@ -103,7 +103,7 @@ export const projects = [
       "LoRaWAN",
       "IoT",
       "AI/Machine Learning",
-      "Python",
+      "Embedded C",
       "GIS Mapping",
       "Web Dashboard",
       "Pressure Sensors",

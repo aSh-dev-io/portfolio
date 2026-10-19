@@ -10,7 +10,7 @@ export default function SignalPulse() {
         cx="0"
         cy="150"
         r="4"
-        fill="#00E5FF"
+        fill="#00ABE4"
         animate={{ cx: [0, 250, 250, 420] }}
         transition={{
           duration: 6,
@@ -24,7 +24,7 @@ export default function SignalPulse() {
         cx="0"
         cy="720"
         r="4"
-        fill="#00E5FF"
+        fill="#00ABE4"
         animate={{ cx: [0, 320, 320, 500] }}
         transition={{
           duration: 7,
@@ -39,7 +39,7 @@ export default function SignalPulse() {
         cx="1600"
         cy="120"
         r="4"
-        fill="#00E5FF"
+        fill="#00ABE4"
         animate={{ cx: [1600, 1350, 1350, 1180] }}
         transition={{
           duration: 8,
@@ -53,7 +53,7 @@ export default function SignalPulse() {
         cx="1600"
         cy="760"
         r="4"
-        fill="#00E5FF"
+        fill="#00ABE4"
         animate={{ cx: [1600, 1320, 1320, 1080] }}
         transition={{
           duration: 9,
