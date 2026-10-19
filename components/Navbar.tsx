@@ -147,9 +147,13 @@ export default function Navbar() {
                 aria-label="Primary navigation"
                 className="
                   hidden
+                  min-w-0
+                  flex-1
                   items-center
-                  gap-1
-                  lg:flex
+                  justify-center
+                  gap-0.5
+                  md:flex
+                  lg:gap-1
                 "
               >
                 {primaryNavLinks.map((link) => (
@@ -158,9 +162,11 @@ export default function Navbar() {
                     href={link.href}
                     className="
                       rounded-full
-                      px-3
+                      px-2
                       py-1.5
-                      text-sm
+                      text-xs
+                      lg:px-3
+                      lg:text-sm
                       text-slate-400
                       transition-all
                       duration-300
@@ -177,7 +183,7 @@ export default function Navbar() {
                   CONTACT BUTTON
               ================================================= */}
 
-              <div className="hidden lg:block">
+              <div className="hidden shrink-0 md:block">
                 <a
                   href="#contact"
                   className="
@@ -230,7 +236,7 @@ export default function Navbar() {
                   hover:border-cyan-400/40
                   hover:bg-cyan-400/10
                   hover:text-cyan-200
-                  lg:hidden
+                  md:hidden
                 "
               >
                 {open ? <X size={18} /> : <Menu size={18} />}
@@ -267,7 +273,7 @@ export default function Navbar() {
                 className="
                   section-container
                   mt-2
-                  lg:hidden
+                  md:hidden
                 "
               >
                 <div
