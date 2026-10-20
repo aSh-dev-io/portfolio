@@ -295,7 +295,7 @@ export default function About() {
               rounded-2xl
               border
               border-white/[0.08]
-              bg-white
+              bg-surface
               p-8
               transition-colors
               duration-500
@@ -620,7 +620,7 @@ export default function About() {
                 rounded-[1.5rem]
                 border
                 border-white/[0.14]
-                bg-white
+                bg-surface
                 shadow-[0_25px_80px_rgba(0,0,0,0.35)]
               "
             >
