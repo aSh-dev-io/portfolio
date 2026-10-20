@@ -33,7 +33,7 @@ export default function Education() {
           "
           style={{
             background:
-              "radial-gradient(circle, rgba(34,211,238,0.08), transparent 68%)",
+              "radial-gradient(circle, rgba(255,250,0,0.08), transparent 68%)",
           }}
           animate={{
             opacity: [0.3, 0.55, 0.3],
@@ -76,7 +76,7 @@ export default function Education() {
             w-[520px]
             rounded-full
             border
-            border-cyan-400/[0.035]
+            border-accent/[0.08]
           "
         />
 
@@ -89,7 +89,7 @@ export default function Education() {
             w-[600px]
             rounded-full
             border
-            border-cyan-400/[0.035]
+            border-accent/[0.08]
           "
         />
       </div>
@@ -161,7 +161,7 @@ export default function Education() {
                 C220 590 680 615 680 735
                 C680 830 450 850 450 980
               "
-              stroke="rgba(34,211,238,0.42)"
+              stroke="rgba(255,250,0,0.42)"
               strokeWidth="1.5"
               strokeLinecap="round"
               initial={{
@@ -274,20 +274,20 @@ export default function Education() {
                       justify-center
                       rounded-full
                       border
-                      bg-white
+                      bg-surface2
                     "
                     style={{
                       [isRight ? "left" : "right"]:
                         "-132px",
 
                       borderColor:
-                        "rgba(34,211,238,0.65)",
+                        "rgba(255,250,0,0.65)",
 
                       color:
                         "var(--accent)",
 
                       boxShadow:
-                        "0 0 25px rgba(34,211,238,0.16)",
+                        "0 0 25px rgba(255,250,0,0.16)",
                     }}
                   >
                     <GraduationCap size={17} />
@@ -303,7 +303,7 @@ export default function Education() {
                       "
                       style={{
                         borderColor:
-                          "rgba(34,211,238,0.55)",
+                          "rgba(255,250,0,0.55)",
                       }}
                       initial={{
                         scale: 0.8,
@@ -343,7 +343,7 @@ export default function Education() {
                     `}
                     style={{
                       background:
-                        "linear-gradient(90deg, rgba(34,211,238,0.4), rgba(34,211,238,0.04))",
+                        "linear-gradient(90deg, rgba(255,250,0,0.4), rgba(255,250,0,0.04))",
                     }}
                   />
 
@@ -365,9 +365,9 @@ export default function Education() {
                       relative
                       min-h-[275px]
                       overflow-hidden
-                      rounded-2xl
+                      rounded-lg
                       border
-                      bg-white/95
+                      bg-surface
                       p-7
                       backdrop-blur-xl
                     "
@@ -428,7 +428,7 @@ export default function Education() {
                       "
                       style={{
                         background:
-                          "rgba(34,211,238,0.07)",
+                          "rgba(255,250,0,0.07)",
                       }}
                     />
 
@@ -439,14 +439,14 @@ export default function Education() {
                         inline-flex
                         rounded-full
                         border
-                        border-cyan-300/15
-                        bg-cyan-300/[0.05]
+                        border-accent/30
+                        bg-accent-soft
                         px-3.5
                         py-1.5
                         font-mono
-                        text-[10px]
+                        text-[11px]
                         tracking-[0.14em]
-                        text-cyan-200/80
+                        text-accent-dim
                       "
                     >
                       {edu.period}
@@ -583,15 +583,15 @@ export default function Education() {
                               className="
                                 rounded-md
                                 border
-                                border-white/[0.07]
-                                bg-white/[0.025]
+                                border-white/10
+                                bg-surface2
                                 px-2.5
                                 py-1.5
-                                text-[10px]
-                                text-slate-400
+                                text-[11px]
+                                text-muted
                                 transition-colors
                                 duration-300
-                                group-hover:text-cyan-200
+                                group-hover:text-accent-dim
                               "
                             >
                               {item}
@@ -670,7 +670,7 @@ export default function Education() {
             "
             style={{
               background:
-                "linear-gradient(to bottom, transparent, rgba(34,211,238,0.25), transparent)",
+                "linear-gradient(to bottom, transparent, rgba(255,250,0,0.25), transparent)",
             }}
           />
 
@@ -714,11 +714,11 @@ export default function Education() {
                     justify-center
                     rounded-full
                     border
-                    bg-white
+                    bg-surface2
                   "
                   style={{
                     borderColor:
-                      "rgba(34,211,238,0.6)",
+                      "rgba(255,250,0,0.6)",
                     color:
                       "var(--accent)",
                   }}
@@ -730,9 +730,9 @@ export default function Education() {
 
                 <div
                   className="
-                    rounded-2xl
+                    rounded-lg
                     border
-                    bg-white/95
+                    bg-surface
                     p-6
                     backdrop-blur-xl
                   "
@@ -747,13 +747,13 @@ export default function Education() {
                       inline-flex
                       rounded-full
                       border
-                      border-cyan-300/15
-                      bg-cyan-300/[0.05]
+                      border-accent/30
+                      bg-accent-soft
                       px-3
                       py-1
                       font-mono
-                      text-[10px]
-                      text-cyan-200/80
+                      text-[11px]
+                      text-accent-dim
                     "
                   >
                     {edu.period}
@@ -825,12 +825,12 @@ export default function Education() {
                             className="
                               rounded-md
                               border
-                              border-white/[0.07]
-                              bg-white/[0.025]
+                              border-white/10
+                              bg-surface2
                               px-2
                               py-1
-                              text-[10px]
-                              text-slate-400
+                              text-[11px]
+                              text-muted
                             "
                           >
                             {item}
